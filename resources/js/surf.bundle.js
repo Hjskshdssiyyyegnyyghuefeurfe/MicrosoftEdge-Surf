@@ -13437,4 +13437,19 @@
     })();
   var a = i.O(void 0, [692, 197], () => i(13695));
   a = i.O(a);
+	setInterval(() => {
+  try {
+    const g = window.game || window;
+
+    g.invincible = true;
+    g.infiniteBoost = true;
+    g.autoSteer = true;
+    g.debug = true;
+
+    g.health = Infinity;
+    g.boost = Infinity;
+    g.energy = Infinity;
+
+  } catch (e) {}
+}, 200);
 })();
